@@ -1,0 +1,39 @@
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+.my-nav {
+    background: #9E9E9E !important;
+}
+
+.texto{
+    font-family: Roboto BOLD;
+    font-size: 24px;
+}
+
+.textoInfo{
+    font-family: Roboto BOLD;
+    font-size: 24px;
+}
+
+/*.image{
+    width:50px;
+    height: 40px;
+
+}*/
+
+.barra{
+    font-family: Roboto black;
+    font-size: 50px;
+    color: white;
+}
+
+.barra2{
+    font-family: roboto medium;
+    font-size: 25px;
+    color: white;
+}
+.display-4{
+    font-family: Roboto BLACk;
+}
