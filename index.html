@@ -76,21 +76,32 @@
             </p>
             <p class="lead">
                 <a class="btn btn-primary btn-lg" href="Información de contacto.html" role="button">Información de contacto</a>
+                <p id="result"></p>
                 <script type="text/javascript">
                     function clickCounter() {
-                        if (typeof(Storage) !== "undefined") {
-                            if (localStorage.clickcount) {
-                                localStorage.clickcount = Number(localStorage.clickcount) + 1;
-                            } else {
-                                localStorage.clickcount = 1;
-                            }
-                            document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+                        /*if (typeof(Storage) !== "undefined") {
+                        if (localStorage.loadcount) {
+                            localStorage.loadcount = Number(localStorage.loadcount) + 1;
                         } else {
-                            document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+                            localStorage.loadcount = 1;
+                        }
+                        document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+                    } else {
+                        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+                    }*/
+                        if (typeof(Storage) !== "undefined") {
+                            if (localStorage.load) {
+                                localStorage.load = Number(localStorage.load) + 1
+                            } else {
+                                localStorage.load = 1
+                            }
+                            document.getElementById("result").innerHTML = "You have visited this page " + localStorage.load + " times."
+                        } else {
+                            document.getElementById("result").innerHTML = "Lo siento, tu navegador no tiene soporte para web storage."
                         }
                     }
                 </script>
-                <a class="btn btn-primary btn-lg" href="#" role="button">Count</a>
+
             </p>
         </div>
     </div>
